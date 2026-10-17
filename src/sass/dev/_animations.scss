@@ -1,0 +1,92 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes show {
+  0% {
+    display: none !important;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  1% {
+    display: block !important;
+  }
+
+  100% {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes hide {
+  0% {
+    display: block !important;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  99% {
+    display: block !important;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  100% {
+    display: none !important;
+  }
+}
+
+@keyframes tuda-suda {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-40%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    transition: all 0.25s ease-out;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}

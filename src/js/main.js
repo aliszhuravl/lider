@@ -1,0 +1,11 @@
+//= parts/_viewport.js
+//= parts/_ie.js
+//= parts/_dd.js
+//= parts/_tabs.js
+//= parts/_acc.js
+//= parts/_scroll-animation.js
+//= parts/_burger.js
+//= parts/_slick.js
+//= parts/_fancybox.js
+//= parts/_sticky.js
+//= parts/_search.js

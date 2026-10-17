@@ -1,0 +1,115 @@
+.article {
+  width: 100%;
+  padding: 0 180px;
+  margin-bottom: -70px;
+  p {
+    font-size: 16px;
+    line-height: 1.4;
+    color: $font-color_light;
+    margin-bottom: 12px;
+  }
+  .authors_block {
+    margin-bottom: 32px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .author {
+      .au_name .bold {
+        color: $color-black;
+        opacity: 1;
+      }
+      .photo {
+        min-width: 70px;
+        min-height: 70px;
+      }
+      &:first-child {
+        margin-right: 32px;
+      }
+    }
+  }
+  ul {
+    margin-bottom: 32px;
+    padding-left: 32px;
+    list-style-type: none;
+    li {
+      margin-bottom: 8px;
+      position: relative;
+      font-size: calc(22px + (24 - 22) * ((100vw - 1199px) / (1920 - 1199)));
+      &:before {
+        width: 18px;
+        height: 1px;
+        background-color: $color-black;
+        content: '';
+        margin: 0 16px 0 0;
+        position: absolute;
+        left: -32px;
+        top: 0.8rem;
+      }
+    }
+  }
+
+  .video_box {
+    padding: 0;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    position: relative;
+    .play {
+      opacity: 1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 4;
+      width: 80px;
+      height: 80px;
+      background-color: rgba(255, 255, 255, 0.4);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 22px;
+        height: 22px;
+        display: block;
+      }
+    }
+  }
+
+}
+
+.article-date {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  .aging {
+      padding: 3px 8px;
+      border-radius: 5px;
+      background-color: rgba(0, 186, 37, 0.1);
+      color: $color-green;
+      font-family: $font-family_medium;
+      font-size: 14px;
+    margin-right: 20px;
+  }
+}
+
+.slider-box {
+  width: 100%;
+  .nums {
+    position: relative;
+  }
+}
+
+.slider {
+  .article-tile {
+    .slick-list {
+      margin-right: -32px;
+    }
+    .simple-tile__item {
+      margin-right: 32px;
+      margin-bottom: 0;
+    }
+  }
+}

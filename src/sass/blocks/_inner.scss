@@ -1,0 +1,340 @@
+.page-inner {
+  .header {
+    position: relative;
+    margin-bottom: 60px;
+    .header_top {
+      p, a, span {
+        color: $color-black;
+      }
+      .social_link span:before {
+        color: $color-black;
+      }
+      .search .btn_transparent span:before {
+        color: $color-black;
+      }
+      .logo img {
+        filter: brightness(1);
+      }
+    }
+    .header_bottom {
+      .header__inner {
+        border-color: $color-border;
+        .nav__link {
+          color: $color-black !important;
+        }
+        .dropdown_hover .dropdown__text {
+          color: $color-black;
+          a {
+            color: $color-black;
+          }
+          &:after {
+            border-color: $color-black;
+          }
+        }
+      }
+    }
+    .header_bottom {
+      border-color: $color-border;
+    }
+    .btn_indicator {
+      border-color: $color-black;
+    }
+    .logo {
+      a {
+        display: block;
+        svg {
+          path {
+            fill: $color-black;
+          }
+          .green {
+            fill: $color-green;
+          }
+        }
+      }
+    }
+  }
+  .white-body {
+    margin-top: 0;
+  }
+  h1 {
+    text-transform: uppercase;
+    font-size: 48px;
+  }
+  .with-photo {
+    h1 {
+      max-width: 50%;
+    }
+  }
+  .descr_box {
+    max-width: 50%;
+    .aging {
+      display: flex;
+      margin-bottom: 12px;
+      p {
+        background-color: rgba(0, 186, 37, 0.1);
+        color: $color-green;
+        font-family: $font-family_medium;
+        font-size: 14px;
+      }
+    }
+    .descr {
+      color: $font-color_light;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  }
+  .bordered-simple .simple-tile__item .slide-top {
+    align-items: baseline;
+    .dot {
+      width: 8px;
+      height: 8px;
+      margin-right: 12px;
+    }
+    p {
+      max-width: 80%;
+      line-height: 1.1;
+      font-family: $font-family_medium;
+    }
+  }
+}
+
+.bc {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 0;
+  margin-bottom: 20px;
+  font-family: $font-family;
+  &::-webkit-scrollbar { display: none; }
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+  .link {
+    font-size: 14px;
+    font-family: $font-family;
+  }
+  .link span {
+    opacity: 1 !important;
+    font-family: $font-family;
+  }
+  li {
+    white-space: nowrap;
+  }
+  p span {
+    display: block;
+    width: auto;
+    opacity: 0.5;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+.tuda {
+  width: 6px;
+  height: 6px;
+  content: '';
+  border-right: 1px solid $color-black;
+  border-top: 1px solid $color-black;
+  transform: rotate(45deg);
+  display: block;
+  margin: 0 10px;
+}
+
+.tile-30 {
+  .simple-tile__item {
+    border: 1px solid $color-border;
+    width: calc(33.3333% - 22px);
+    margin-right: 32px;
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
+  }
+}
+
+.white-items {
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: -32px;
+  .simple-tile__item {
+    background-color: #fff;
+    border-color: transparent;
+    margin-bottom: 32px;
+    .item-name {
+      font-family: $font-family_medium;
+      margin-bottom: 8px;
+      font-size: 18px;
+      line-height: 1.2;
+    }
+    .light {
+      font-size: 14px;
+      color: $font-color_light;
+    }
+    .dot-num {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 32px;
+      .dot {
+        margin-right: 12px;
+      }
+      .num {
+        font-size: 30px;
+        line-height: 1;
+        color: $color-green;
+        font-family: $font-family_medium;
+      }
+    }
+  }
+
+  .contact {
+    border: 1px solid $color-green;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .dot-num {
+      margin-bottom: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      p {
+        font-size: 24px;
+      }
+      .light {
+        font-size: 14px;
+        margin-bottom: 12px;
+      }
+    }
+    .phone-block {
+      margin-bottom: 16px;
+    }
+    .btn {
+      min-width: 100%;
+      justify-content: space-between;
+    }
+
+  }
+}
+
+.bottom-bordered {
+  .simple-tile__item {
+    flex-direction: column;
+    padding: 0 0 16px 16px;
+    border-color: transparent;
+    border-bottom: 1px solid $color-border;
+    .top {
+      width: 100%;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+    }
+      .text {
+        .deco {
+          font-size: 22px;
+          max-width: 90%;
+        }
+      }
+    .light {
+      font-size: 14px;
+      color: $font-color_light;
+      line-height: 1.5;
+      padding-right: 12px;
+      max-width: 80%;
+    }
+  }
+
+}
+
+.green-last {
+  margin-top: -60px;
+  margin-bottom: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.slider {
+  width: 100%;
+}
+
+.photo_slider {
+  .slick-list {
+    margin-right: -32px;
+  }
+  .simple-tile__item {
+    padding: 0;
+    width: 33.333333%;
+    margin-right: 32px;
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
+    &:nth-child(3n+3) {
+      margin-right: 32px;
+    }
+    img {
+      width: 100%;
+      display: block;
+      height: 240px;
+      object-fit: cover;
+    }
+  }
+}
+
+.doc-slider {
+  .slick-list {
+    margin-right: -32px;
+  }
+  .simple-tile__item {
+    padding: 0;
+    margin-right: 32px;
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
+    img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+}
+
+.with-photo {
+  position: relative;
+  .main-photo {
+    position: absolute;
+    width: 40%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    right: 0;
+    bottom: -40%;
+    z-index: 5;
+    background-image: url('../img/fone.png');
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    background-position: top left;
+    .img {
+      border-radius: 20px;
+      max-width: 350px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+}
+
+.page-tourism {
+  .with-photo .main-photo {
+    bottom: -55%;
+  }
+}
