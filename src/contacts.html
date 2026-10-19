@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    //= html/_head.html
+    <title>Контакты гимназии «Лидер»</title>
+</head>
+<body>
+<div class="page-container page-inner page-contacts">
+    //= html/_header.html
+    <main class="page">
+        <div class="page__inner">
+            <section class="page__item">
+                <div class="page__item_top with-photo">
+                    <ul class="bc"><li><a href="index.html" class="link"><span>Главная</span></a></li> <li><span class="tuda"></span></li><li><p><span>Контакты</span></p></li></ul>
+                    <h1>контакты</h1>
+                    <div class="contacts_box">
+                        <div class="left">
+                            <div class="phone-block">
+                                <div class="icon">
+                                    <img src="img/phone.svg" alt="Позвонить">
+                                </div>
+                                <div class="phone">
+                                    <a href="tel:84952217700" class="link underlined">+7 (495) 221-77-00</a>
+                                    <p class="light">Телефон</p>
+                                </div>
+                            </div>
+                            <div class="phone-block">
+                                <div class="icon">
+                                    <img src="img/mail.svg" alt="Позвонить">
+                                </div>
+                                <div class="phone">
+                                    <a href="tel:84952217700" class="link underlined">lidergim@mail.ru</a>
+                                    <p class="light">Email</p>
+                                </div>
+                            </div>
+                            <div class="phone-block">
+                                <div class="icon">
+                                    <img src="img/time.svg" alt="Позвонить">
+                                </div>
+                                <div class="phone">
+                                    <p class="bold">ПН-ПТ 7:00 - 19:00 СБ 7:00 - 11:00</p>
+                                    <p class="light">Режим работы</p>
+                                </div>
+                            </div>
+                            <div class="title_btns">
+                                <a href="#modal_2" rel="modal:open" class="btn">Задать вопрос <span class="icon-arrow"></span></a>
+                                <a href="#primer" class="btn btn_simple">Подписаться на рассылку</a>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="map_container">
+                                <div class="map" id="map"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="white-body">
+            <div class="page-block white-bg tablet-no-marg form big-form">
+                <div class="page__inner gb_animate">
+                    <section class="page__item form-last">
+                        <div class="page__item_title no-descr">
+                            <div class="left">
+                                <div class="title_outter">
+                                    <div class="left-point"><div class="subheading"><span class="dot"></span><p>Связаться</p></div></div>
+                                    <h2>Есть предложения по организации учебного процесса?</h2>
+                                </div>
+                                <div class="subtitle_h2">
+                                    <div class="p">
+                                        <p>Оставьте заявку  — мы свяжемся с вами, поможем выбрать направление, расскажем о корпусах и пригласим на экскурсию</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page__item_body columned">
+                            <div class="form-outter">
+                                <div class="form_box">
+                                    <input type="text" class="form__item form_item__round" placeholder="Ваше имя">
+                                </div>
+                                <div class="form_box">
+                                    <input type="tel" class="form__item form_item__round" placeholder="Номер телефона">
+                                </div>
+                                <div class="form_box">
+                                    <textarea class="form__textarea" id="" cols="30" rows="10" placeholder="Ваш комментарий"></textarea>
+                                </div>
+                            </div>
+                            <div class="btns-box">
+                                <a href="#modal_3" rel="modal:open" class="btn">Отправить  <span class="icon-arrow"></span></a>
+                            </div>
+                            <div class="agreement">
+                                <label class="inline-label form__checkbox check">
+                                    <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                    <span class="form__checkbox_indicator"></span>
+                                    <p>Я принимаю условия <a href="#" class="link link_black">Пользовательского соглашения</a></p>
+                                </label>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="page-block no-color tablet-no-marg no-bottom-margin">
+                <div class="page__inner gb_animate">
+                    <section class="page__item">
+                        <div class="page__item_title">
+                            <div class="left">
+                                <div class="title_outter">
+                                    <div class="left-point"><div class="subheading"><span class="dot"></span><p>Корпуса</p></div></div>
+                                    <h2>Школы</h2>
+                                </div>
+                                <div class="subtitle_h2">
+                                    <div class="p">
+                                        <p>Обучение проходит в пространствах, которые соответствуют возрасту детей, формату занятий и ежедневному режиму.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page__item_body">
+                            <div class="simple-tile tile-50 tile-places">
+                                <div class="simple-tile__item">
+                                    <div class="place_top">
+                                        <div class="aging"><p>1-4 классы</p></div>
+                                        <p class="deco">Корпус на ул. Красных Партизан, 295–297</p>
+                                    </div>
+                                    <div class="place_contacts">
+                                        <div class="phone">
+                                            <a href="tel:88612050155" class="link link_green underlined">8 (861) 205-01-55</a>
+                                            <p class="light">Александра Владимировна</p>
+                                        </div>
+                                        <div class="timing">
+                                            <p class="bold">ПН-ПТ 7:00 - 19:00 СБ 7:00 - 11:00</p>
+                                            <p class="light">Режим работы</p>
+                                        </div>
+                                    </div>
+                                    <div class="place_person">
+                                        <div class="author auth-video">
+                                            <div class="photo">
+                                                <img src="img/2.jpg" alt="">
+                                            </div>
+                                            <div class="au_name">
+                                                <p class="bold">Спичкин Михаил</p>
+                                                <p class="light">Директор филиала</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="simple-tile__item">
+                                    <div class="place_top">
+                                        <div class="aging"><p>1-4 классы</p></div>
+                                        <p class="deco">ул. Крымская, 41</p>
+                                    </div>
+                                    <div class="place_contacts">
+                                        <div class="phone">
+                                            <a href="tel:88612050155" class="link link_green underlined">8 (861) 205-01-55</a>
+                                            <p class="light">Александра Владимировна</p>
+                                        </div>
+                                        <div class="timing">
+                                            <p class="bold">ПН-ПТ 7:00 - 19:00 СБ 7:00 - 11:00</p>
+                                            <p class="light">Режим работы</p>
+                                        </div>
+                                    </div>
+                                    <div class="place_person">
+                                        <div class="author auth-video">
+                                            <div class="photo">
+                                                <img src="img/2.jpg" alt="">
+                                            </div>
+                                            <div class="au_name">
+                                                <p class="bold">Спичкин Михаил</p>
+                                                <p class="light">Директор филиала</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="simple-tile__item">
+                                    <div class="place_top">
+                                        <div class="aging"><p>5-9 классы</p></div>
+                                        <p class="deco">Ул. Северная/им. Тургенева, 231/37 </p>
+                                    </div>
+                                    <div class="place_contacts">
+                                        <div class="phone">
+                                            <a href="tel:88612050155" class="link link_green underlined">8 (861) 205-01-55</a>
+                                            <p class="light">Александра Владимировна</p>
+                                        </div>
+                                        <div class="timing">
+                                            <p class="bold">ПН-ПТ 7:00 - 19:00 СБ 7:00 - 11:00</p>
+                                            <p class="light">Режим работы</p>
+                                        </div>
+                                    </div>
+                                    <div class="place_person">
+                                        <div class="author auth-video">
+                                            <div class="photo">
+                                                <img src="img/2.jpg" alt="">
+                                            </div>
+                                            <div class="au_name">
+                                                <p class="bold">Спичкин Михаил</p>
+                                                <p class="light">Директор филиала</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="simple-tile__item">
+                                    <div class="place_top">
+                                        <div class="aging"><p>5-11 классы</p></div>
+                                        <p class="deco">ул. Константина Симонова, 29/3</p>
+                                    </div>
+                                    <div class="place_contacts">
+                                        <div class="phone">
+                                            <a href="tel:88612050155" class="link link_green underlined">8 (861) 205-01-55</a>
+                                            <p class="light">Александра Владимировна</p>
+                                        </div>
+                                        <div class="timing">
+                                            <p class="bold">ПН-ПТ 7:00 - 19:00 СБ 7:00 - 11:00</p>
+                                            <p class="light">Режим работы</p>
+                                        </div>
+                                    </div>
+                                    <div class="place_person">
+                                        <div class="author auth-video">
+                                            <div class="photo">
+                                                <img src="img/2.jpg" alt="">
+                                            </div>
+                                            <div class="au_name">
+                                                <p class="bold">Спичкин Михаил</p>
+                                                <p class="light">Директор филиала</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="simple-tile__item">
+                                    <div class="place_top">
+                                        <div class="aging"><p>10-11 классы</p></div>
+                                        <p class="deco">ул. Красных Партизан, 267</p>
+                                    </div>
+                                    <div class="place_contacts">
+                                        <div class="phone">
+                                            <a href="tel:88612050155" class="link link_green underlined">8 (861) 205-01-55</a>
+                                            <p class="light">Александра Владимировна</p>
+                                        </div>
+                                        <div class="timing">
+                                            <p class="bold">ПН-ПТ 7:00 - 19:00 СБ 7:00 - 11:00</p>
+                                            <p class="light">Режим работы</p>
+                                        </div>
+                                    </div>
+                                    <div class="place_person">
+                                        <div class="author auth-video">
+                                            <div class="photo">
+                                                <img src="img/2.jpg" alt="">
+                                            </div>
+                                            <div class="au_name">
+                                                <p class="bold">Спичкин Михаил</p>
+                                                <p class="light">Директор филиала</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="page-block white-bg no-bottom-margin">
+                <div class="page__inner gb_animate">
+                    <section class="page__item">
+                        <div class="page__item_title">
+                            <div class="left">
+                                <div class="title_outter">
+                                    <div class="left-point"><div class="subheading"><span class="dot"></span><p>Корпуса</p></div></div>
+                                    <h2>Детские сады</h2>
+                                </div>
+                                <div class="subtitle_h2">
+                                    <div class="p">
+                                        <p>Обучение проходит в пространствах, которые соответствуют возрасту детей, формату занятий и ежедневному режиму.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page__item_body">
+                            <div class="simple-tile tile-50 tile-places">
+                                <div class="simple-tile__item">
+                                    <div class="place_top">
+                                        <div class="aging"><p>1-4 классы</p></div>
+                                        <p class="deco">Корпус на ул. Красных Партизан, 295–297</p>
+                                    </div>
+                                    <div class="place_contacts">
+                                        <div class="phone">
+                                            <a href="tel:88612050155" class="link link_green underlined">8 (861) 205-01-55</a>
+                                            <p class="light">Александра Владимировна</p>
+                                        </div>
+                                        <div class="timing">
+                                            <p class="bold">ПН-ПТ 7:00 - 19:00 СБ 7:00 - 11:00</p>
+                                            <p class="light">Режим работы</p>
+                                        </div>
+                                    </div>
+                                    <div class="place_person">
+                                        <div class="author auth-video">
+                                            <div class="photo">
+                                                <img src="img/2.jpg" alt="">
+                                            </div>
+                                            <div class="au_name">
+                                                <p class="bold">Спичкин Михаил</p>
+                                                <p class="light">Директор филиала</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="simple-tile__item">
+                                    <div class="place_top">
+                                        <div class="aging"><p>1-4 классы</p></div>
+                                        <p class="deco">ул. Крымская, 41</p>
+                                    </div>
+                                    <div class="place_contacts">
+                                        <div class="phone">
+                                            <a href="tel:88612050155" class="link link_green underlined">8 (861) 205-01-55</a>
+                                            <p class="light">Александра Владимировна</p>
+                                        </div>
+                                        <div class="timing">
+                                            <p class="bold">ПН-ПТ 7:00 - 19:00 СБ 7:00 - 11:00</p>
+                                            <p class="light">Режим работы</p>
+                                        </div>
+                                    </div>
+                                    <div class="place_person">
+                                        <div class="author auth-video">
+                                            <div class="photo">
+                                                <img src="img/2.jpg" alt="">
+                                            </div>
+                                            <div class="au_name">
+                                                <p class="bold">Спичкин Михаил</p>
+                                                <p class="light">Директор филиала</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="simple-tile__item">
+                                    <div class="place_top">
+                                        <div class="aging"><p>5-9 классы</p></div>
+                                        <p class="deco">Ул. Северная/им. Тургенева, 231/37 </p>
+                                    </div>
+                                    <div class="place_contacts">
+                                        <div class="phone">
+                                            <a href="tel:88612050155" class="link link_green underlined">8 (861) 205-01-55</a>
+                                            <p class="light">Александра Владимировна</p>
+                                        </div>
+                                        <div class="timing">
+                                            <p class="bold">ПН-ПТ 7:00 - 19:00 СБ 7:00 - 11:00</p>
+                                            <p class="light">Режим работы</p>
+                                        </div>
+                                    </div>
+                                    <div class="place_person">
+                                        <div class="author auth-video">
+                                            <div class="photo">
+                                                <img src="img/2.jpg" alt="">
+                                            </div>
+                                            <div class="au_name">
+                                                <p class="bold">Спичкин Михаил</p>
+                                                <p class="light">Директор филиала</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="simple-tile__item">
+                                    <div class="place_top">
+                                        <div class="aging"><p>5-11 классы</p></div>
+                                        <p class="deco">ул. Константина Симонова, 29/3</p>
+                                    </div>
+                                    <div class="place_contacts">
+                                        <div class="phone">
+                                            <a href="tel:88612050155" class="link link_green underlined">8 (861) 205-01-55</a>
+                                            <p class="light">Александра Владимировна</p>
+                                        </div>
+                                        <div class="timing">
+                                            <p class="bold">ПН-ПТ 7:00 - 19:00 СБ 7:00 - 11:00</p>
+                                            <p class="light">Режим работы</p>
+                                        </div>
+                                    </div>
+                                    <div class="place_person">
+                                        <div class="author auth-video">
+                                            <div class="photo">
+                                                <img src="img/2.jpg" alt="">
+                                            </div>
+                                            <div class="au_name">
+                                                <p class="bold">Спичкин Михаил</p>
+                                                <p class="light">Директор филиала</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    //= html/_footer.html
+    //= html/_menu.html
+    //= html/_search-box.html
+    //= html/_popup-demo.html
+    //= html/_popup-video.html
+    //= html/_sucsess.html
+</div>
+//= html/_scripts.html
+</body>
+</html>

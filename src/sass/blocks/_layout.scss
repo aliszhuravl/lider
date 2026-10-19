@@ -825,6 +825,99 @@
     border-bottom: 1px solid $color-border;
   }
 
+  .page-about {
+    .bg-img {
+      background-attachment: unset;
+    }
+    .white-items {
+      margin-bottom: 0;
+    }
+    .with-photo .main-photo {
+      display: block;
+      width: 100%;
+     .img {
+       border-radius: 20px;
+       .preview {
+         border-radius: 20px;
+         overflow: hidden;
+       }
+     }
+    }
+  }
+
+  .tag_container__item {
+    margin-right: 12px;
+    margin-bottom: 12px;
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .page-docs {
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 32px;
+      line-height: 1.2;
+    }
+    .docs_tile .simple-tile__item .left .doc_content .doc_name {
+      font-size: 16px;
+    }
+    .docs_tile .simple-tile__item:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  .contacts_box {
+    flex-direction: column;
+    margin-top: 40px;
+    .left {
+      display: flex;
+      margin-right: 0;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-bottom: 32px;
+     .phone-block {
+       width: calc(50% - 20px);
+       margin-right: 40px;
+       margin-bottom: 20px;
+       &:nth-child(2n) {
+         margin-right: 0;
+       }
+       &:nth-child(3) {
+         width: 100%;
+         margin-right: 0;
+       }
+     }
+    }
+    .right {
+      width: 100%;
+      border-radius: 20px;
+    }
+  }
+
+  .tile-places {
+    .simple-tile__item {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+
+  .header_transparent {
+    z-index: 11;
+    .header_top .search_mobile .btn_transparent span:before {
+      font-size: 20px;
+    }
+    .hamburger_active span:before, .hamburger_active span:after {
+      background-color: $color-black;
+    }
+  }
+
 }
 
 //----------------------------------------------------------- 640 ---------------------------------------------------------------------
@@ -1903,6 +1996,155 @@
 
   .page-inner .header .header_top .hamburger, .page-inner .header .header_top .hamburger span, .page-inner .header .header_top .hamburger span:before, .page-inner .header .header_top .hamburger span:after {
     width: 24px;
+  }
+
+  .page-about {
+    .page__item_top {
+      .btn {
+        min-width: 100%;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .page-about .bg-img {
+    background-attachment: unset;
+    background-size: cover;
+  }
+
+  .tag_container__item {
+    padding: 6px 12px;
+    height:  40px;
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .page-docs h2 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .page-docs .page__item_title {
+    margin-bottom: 20px;
+  }
+
+  .page-docs .page__item {
+    margin-bottom: 20px;
+  }
+
+  .page-docs .docs_tile .simple-tile__item .left .doc_content .doc_name {
+    font-size: 14px;
+  }
+
+  .contacts_box {
+    flex-direction: column;
+    margin-top: 20px;
+    .left {
+      display: flex;
+      margin-right: 0;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-bottom: 32px;
+      .phone-block {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        .link {
+          font-size: 16px;
+          margin-bottom: 4px;
+        }
+        .bold {
+          font-size: 16px;
+          margin-bottom: 4px;
+        }
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+        &:nth-child(3) {
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+    }
+    .right {
+      width: 100%;
+      border-radius: 20px;
+    }
+  }
+
+  .tile-places .simple-tile__item {
+    padding: 0;
+    border-radius: 0;
+    &:last-child {
+      margin-bottom: 0;
+      border-bottom: 0;
+      padding-bottom: 0;
+      .author.auth-video {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .tile-places .place_top .deco {
+    font-size: 18px;
+  }
+
+  .tile-places .place_contacts {
+    flex-wrap: wrap;
+    .timing {
+      .bold {
+        margin-bottom: 4px;
+      }
+    }
+    .phone {
+      margin-right: 0;
+      width: 100%;
+      margin-bottom: 12px;
+      .link {
+        margin-bottom: 4px;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .hero {
+    height: 98vh;
+    .scroll {
+      display: none;
+    }
+    .hero__inner {
+      padding-bottom: 44px;
+    }
+  }
+
+  .header_transparent {
+    top: 6px;
+    margin-bottom: 32px;
+    &_top {
+      margin-bottom: 0;
+    }
+    .logo a {
+      svg {
+        width: 80px;
+        display: block;
+      }
+    }
+    z-index: 11;
+    .header_top .search_mobile .btn_transparent span:before {
+      font-size: 18px;
+    }
+    .header_top .hamburger, .page-inner .header .header_top .hamburger span, .page-inner .header .header_top .hamburger span:before, .page-inner .header .header_top .hamburger span:after {
+      width: 24px;
+    }
+    .search_mobile {
+      margin-right: 12px;
+    }
   }
 
 }

@@ -26,7 +26,7 @@
   span.icon-arrow {
     margin-left: 12px;
     font-size: 11px;
-    transform: none;
+    transform: rotate(-90deg);
     transition: all 0.2s;
     &:before {
       color: #fff;

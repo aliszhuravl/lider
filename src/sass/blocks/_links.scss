@@ -45,3 +45,13 @@
   }
 }
 
+.link_glasses {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  img {
+    display: block;
+    margin-right: 6px;
+  }
+}
+

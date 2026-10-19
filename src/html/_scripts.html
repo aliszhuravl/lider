@@ -12,8 +12,8 @@
 
     function init() {
         var myMap = new ymaps.Map("map", {
-                center: [56.332716, 37.517222],
-                zoom: 16
+                center: [45.093530, 39.010311],
+                zoom: 14
             }),
 
             // Создаем геообъект с типом геометрии "Точка".
@@ -21,13 +21,13 @@
                 // Описание геометрии.
                 geometry: {
                     type: "Point",
-                    coordinates: [56.332716, 37.517222]
+                    coordinates: [45.093530, 39.010311]
                 },
                 // Свойства.
                 properties: {
                     // Контент метки.
                     iconContent: '',
-                    balloonContent: 'улица Подлипецкая Слобода, 36'
+                    balloonContent: 'Адрес'
                 }
             }, {
                 // Опции.
@@ -38,21 +38,21 @@
             }),
 
             // Создаем метку с помощью вспомогательного класса.
-            myPlacemark1 = new ymaps.Placemark([56.332716, 37.517222], {
+            myPlacemark1 = new ymaps.Placemark([45.093530, 39.010311], {
                 // Свойства.
                 // Содержимое иконки, балуна и хинта.
                 iconContent: '1',
                 balloonContent: 'Балун',
-                hintContent: 'улица Подлипецкая Слобода, 36'
+                hintContent: 'Адрес'
             }, {
                 // Опции.
                 // Стандартная фиолетовая иконка.
                 preset: 'twirl#violetIcon'
             }),
 
-            myPlacemark2 = new ymaps.Placemark([62.08, 35.21], {
+            myPlacemark2 = new ymaps.Placemark([45.093530, 39.010311], {
                 // Свойства.
-                hintContent: 'березовая Аллея, 24'
+                hintContent: 'Адрес'
             }, {
                 // Опции.
                 // Своё изображение иконки метки.

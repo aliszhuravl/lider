@@ -3,6 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=77dc28d4-690d-41be-8dc9-157768aa7e38&lang=ru_RU" type="text/javascript"></script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>Отзывы о гимназии</title>
@@ -53,7 +54,7 @@
                     </div>
 
                     <div class="header_btn">
-                        <a href="#" class="btn btn_white btn_indicator">Пройти тестирование <span class="arrow-box"><span class="icon-arrow"></span></span></a>
+                        <a  href="#modal_2" rel="modal:open" class="btn btn_white btn_indicator">Пройти тестирование <span class="arrow-box"><span class="icon-arrow"></span></span></a>
                     </div>
 
                     <div class="search">
@@ -75,7 +76,7 @@
                             <div class="dropdown__text"><a href="about.html">О гимназии</a></div>
                             <ul class="dropdown__list">
                                 <li class="dropdown__item">
-                                    <a href="mission.html" class="link">Миссия и ценности</a>
+                                    <a href="about.html" class="link">Миссия и ценности</a>
                                 </li>
                                 <li class="dropdown__item">
                                     <a href="team.html" class="link">Наша команда</a>
@@ -123,7 +124,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <a href="#" class="nav__link">Корпуса</a>
+                        <a href="/#places" class="nav__link">Корпуса</a>
                         <a href="contacts.html" class="nav__link">Контакты</a>
                     </div>
                 </div>
@@ -441,7 +442,7 @@
                <div class="footer__bottom">
                    <div class="footer__bottom_item">
                        <ul class="list">
-                           <li><a href="#" class="link">Версия для слабовидящих</a></li>
+                           <li><a href="#" class="link link_glasses"><img src="img/glasses.svg" alt=""> Версия для слабовидящих</a></li>
                            <li><a href="#" class="link">Сведения об образовательной организации</a></li>
                            <li><a href="#"  class="link">Министерство науки и высшего образования РФ</a></li>
                            <li><a href="#"  class="link">Новости Министерства просвещения РФ</a></li>
@@ -472,8 +473,7 @@
                                         </div>
                                         <div class="accordion__content">
                                             <ul class="list">
-                                                <li><a href="about.html" class="link">О гимназии</a></li>
-                                                <li><a href="mission.html" class="link">Миссия и ценности</a></li>
+                                                <li><a href="about.html" class="link">Миссия и ценности</a></li>
                                                 <li> <a href="team.html" class="link">Наша команда</a></li>
                                                 <li> <a href="docs.html" class="link">Сведения об организации</a></li>
                                                 <li> <a href="feedback.html" class="link">Отзывы</a></li>
@@ -624,8 +624,8 @@
 
     function init() {
         var myMap = new ymaps.Map("map", {
-                center: [56.332716, 37.517222],
-                zoom: 16
+                center: [45.093530, 39.010311],
+                zoom: 14
             }),
 
             // Создаем геообъект с типом геометрии "Точка".
@@ -633,13 +633,13 @@
                 // Описание геометрии.
                 geometry: {
                     type: "Point",
-                    coordinates: [56.332716, 37.517222]
+                    coordinates: [45.093530, 39.010311]
                 },
                 // Свойства.
                 properties: {
                     // Контент метки.
                     iconContent: '',
-                    balloonContent: 'улица Подлипецкая Слобода, 36'
+                    balloonContent: 'Адрес'
                 }
             }, {
                 // Опции.
@@ -650,21 +650,21 @@
             }),
 
             // Создаем метку с помощью вспомогательного класса.
-            myPlacemark1 = new ymaps.Placemark([56.332716, 37.517222], {
+            myPlacemark1 = new ymaps.Placemark([45.093530, 39.010311], {
                 // Свойства.
                 // Содержимое иконки, балуна и хинта.
                 iconContent: '1',
                 balloonContent: 'Балун',
-                hintContent: 'улица Подлипецкая Слобода, 36'
+                hintContent: 'Адрес'
             }, {
                 // Опции.
                 // Стандартная фиолетовая иконка.
                 preset: 'twirl#violetIcon'
             }),
 
-            myPlacemark2 = new ymaps.Placemark([62.08, 35.21], {
+            myPlacemark2 = new ymaps.Placemark([45.093530, 39.010311], {
                 // Свойства.
-                hintContent: 'березовая Аллея, 24'
+                hintContent: 'Адрес'
             }, {
                 // Опции.
                 // Своё изображение иконки метки.
