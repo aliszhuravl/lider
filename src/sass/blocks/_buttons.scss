@@ -12,6 +12,7 @@
   border-style: solid;
   border-color: $color-green;
   background-color: $color-green;
+  overflow: hidden;
   color: #fff;
   font-family: $font-family;
   text-transform: uppercase;
@@ -30,6 +31,7 @@
     transition: all 0.2s;
     &:before {
       color: #fff;
+      transition: all 2s;
     }
   }
 
@@ -45,6 +47,7 @@
   &:focus {
     border-color: #09AD29;
     background-color: #09AD29;
+
     span.icon-arrow {
       margin-left: 12px;
       font-size: 11px;
@@ -76,6 +79,23 @@
         color: #09AD29;
       }
     }
+  }
+}
+
+.btn_glow {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transform: skewX(-25deg);
+    transition: left 0.7s ease;
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
   }
 }
 
