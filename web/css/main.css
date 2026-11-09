@@ -3543,6 +3543,10 @@ p.fs-16 {
 	background-color: #fff;
 }
 
+.desc .subtitle_h2 {
+	padding-left: 0 !important;
+}
+
 .video_preview {
 	position: absolute;
 	top: -50%;
